@@ -1,23 +1,28 @@
 import React, { useState } from 'react'
 
+import Drawer from './Drawer'
+
 const Navbar = () => {
-   const [nav, setNav] = useState(false)
+   const [navOut, setNavOut] = useState(false)
 
    const handleNav = () => {
-      setNav(!nav)
+      setNavOut(!navOut)
    }
 
    return (
-      <nav className='navbar'>
-         <div
-            className={nav ? 'navbar-menu-button active' : 'navbar-menu-button'}
-            onClick={handleNav}
-         >
-            <div className='menu-button-bar'></div>
-            <div className='menu-button-bar'></div>
-            <div className='menu-button-bar'></div>
-         </div>
-      </nav>
+      <>
+         <nav className='navbar'>
+            <div
+               className={navOut ? 'navbar-menu-button active' : 'navbar-menu-button'}
+               onClick={handleNav}
+            >
+               <div className='menu-button-bar'></div>
+               <div className='menu-button-bar'></div>
+               <div className='menu-button-bar'></div>
+            </div>
+         </nav>
+         <Drawer navOut={navOut} />
+      </>
    )
 }
 
