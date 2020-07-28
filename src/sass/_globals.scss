@@ -1,0 +1,17 @@
+.grid {
+   display: grid;
+   grid-template-columns: 50px repeat(5, 1fr) 50px;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px 30px;
+   width: max-content;
+   border: 1px solid $black;
+   text-transform: uppercase;
+   cursor: pointer;
+   text-decoration: none;
+   color: $black;
+}

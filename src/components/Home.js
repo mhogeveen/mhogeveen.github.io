@@ -10,6 +10,9 @@ const Home = () => {
                Ik ben een front-end web-developer.
             </p>
          </div>
+         <a href='#home' className='button home-button' role='button'>
+            Bekijk mijn werk
+         </a>
       </section>
    )
 }

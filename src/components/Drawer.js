@@ -24,7 +24,8 @@ const Drawer = ({ navOut }) => {
       <nav className={navOut ? 'drawer active' : 'drawer'}>
          {sections.map((section) => (
             <a key={section.id} className='drawer-item' href={`#${section.id}`}>
-               <span className='drawer-item_title'>{section.name}</span>
+               <span className='drawer-item-title'>{section.name}</span>
+               <div className='drawer-item-dot'></div>
             </a>
          ))}
       </nav>

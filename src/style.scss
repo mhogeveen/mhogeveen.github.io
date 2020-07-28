@@ -2,6 +2,7 @@
 @import './sass/mixins';
 @import './sass/fonts';
 @import './sass/variables';
+@import './sass/globals';
 
 // Components
 @import './sass/components/navbar';
@@ -11,6 +12,7 @@
 
 :root {
    font-size: 15px;
+   scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar-track {
