@@ -14,6 +14,7 @@ const Navbar = () => {
          <div
             className={navOut ? 'navbar-menu-button active' : 'navbar-menu-button'}
             onClick={handleNav}
+            role='button'
          >
             <div className='menu-button-bar'></div>
             <div className='menu-button-bar'></div>

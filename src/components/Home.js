@@ -11,7 +11,7 @@ const Home = () => {
             </p>
          </div>
          <div className='home-button'>
-            <a href='#home' className='button button_home' role='button'>
+            <a href='#home' className='button' role='button'>
                Bekijk mijn werk
             </a>
          </div>

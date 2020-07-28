@@ -10,3 +10,27 @@
 .grid-line {
    border-right: 1px solid $highlight;
 }
+
+.corner {
+   position: fixed;
+   height: 0;
+   width: 0;
+   border-top: $cornerSize solid transparent;
+   border-left: $cornerSize solid transparent;
+   border-right: $cornerSize solid transparent;
+   border-bottom: $cornerSize solid $accent;
+   transform-origin: center;
+   opacity: 0.9;
+
+   &-top {
+      top: -$cornerSize;
+      left: -$cornerSize;
+      transform: rotate(-45deg);
+   }
+
+   &-bottom {
+      bottom: -$cornerSize;
+      right: -$cornerSize;
+      transform: rotate(135deg);
+   }
+}

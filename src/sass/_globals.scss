@@ -14,13 +14,9 @@
    cursor: pointer;
    text-decoration: none;
    color: $black;
-   transition: color 400ms ease-in-out, border-color 400ms ease-in-out,
-      background-color 400ms ease-in-out, border-radius 400ms ease-in-out;
+   transition: border-color 400ms ease-in-out;
 
    &:hover {
-      color: $background;
       border-color: $accent;
-      background-color: $accent;
-      border-radius: 20px;
    }
 }

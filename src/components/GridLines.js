@@ -9,6 +9,8 @@ const GridLines = () => {
          <div className='grid-line'></div>
          <div className='grid-line'></div>
          <div className='grid-line'></div>
+         <div className='corner corner-top'></div>
+         <div className='corner corner-bottom'></div>
       </div>
    )
 }
