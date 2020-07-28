@@ -6,15 +6,30 @@
 // Components
 @import './sass/components/navbar';
 @import './sass/components/drawer';
-@import './sass/components/borders';
+@import './sass/components/gridLines';
 
 :root {
    font-size: 15px;
 }
 
+::-webkit-scrollbar-track {
+   background: transparent;
+}
+
+::-webkit-scrollbar {
+   width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: lighten($black, 25%);
+}
+
 body {
+   height: 200vh;
    padding: 0;
    margin: 0;
    box-sizing: border-box;
    background: $background;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }

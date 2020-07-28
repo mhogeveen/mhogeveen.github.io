@@ -3,6 +3,7 @@
    top: 50%;
    right: 0;
    transform: translateY(-50%) translateX(100%);
+   z-index: 10;
 
    &-item {
       display: flex;
@@ -16,7 +17,10 @@
          font-family: 'Montserrat', sans-serif;
          color: lighten($black, 25%);
          font-size: 50px;
-         font-weight: 200;
+         font-weight: 300;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         mix-blend-mode: darken;
       }
    }
 
