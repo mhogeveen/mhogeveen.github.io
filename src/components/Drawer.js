@@ -19,11 +19,11 @@ const sections = [
    },
 ]
 
-const Drawer = ({ navOut }) => {
+const Drawer = ({ navOut, handleNav }) => {
    return (
       <nav className={navOut ? 'drawer active' : 'drawer'}>
          {sections.map((section) => (
-            <a key={section.id} className='drawer-item' href={`#${section.id}`}>
+            <a key={section.id} className='drawer-item' href={`#${section.id}`} onClick={handleNav}>
                <span className='drawer-item-title'>{section.name}</span>
                <div className='drawer-item-dot'></div>
             </a>

@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className='menu-button-bar'></div>
             <div className='menu-button-bar'></div>
          </div>
-         <Drawer navOut={navOut} />
+         <Drawer navOut={navOut} handleNav={handleNav} />
       </header>
    )
 }
