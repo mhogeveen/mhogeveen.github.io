@@ -24,9 +24,9 @@ const Drawer = ({ navOut }) => {
    return ReactDOM.createPortal(
       <div className={navOut ? 'drawer active' : 'drawer'}>
          {sections.map((section) => (
-            <div key={section.id} className='drawer-item'>
+            <a key={section.id} className='drawer-item' href={`#${section.id}`}>
                <span className='drawer-item_title'>{section.name}</span>
-            </div>
+            </a>
          ))}
       </div>,
       document.querySelector('#modal')

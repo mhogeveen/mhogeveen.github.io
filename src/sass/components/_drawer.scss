@@ -1,0 +1,27 @@
+.drawer {
+   position: fixed;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%) translateX(100%);
+
+   &-item {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+      opacity: 0;
+      text-decoration: none;
+      @include staggered-transition;
+
+      &_title {
+         font-family: 'Montserrat', sans-serif;
+         color: lighten($black, 25%);
+         font-size: 50px;
+         font-weight: 200;
+      }
+   }
+
+   &.active .drawer-item {
+      transform: translateX(calc(-100% - 5px));
+      opacity: 1;
+   }
+}

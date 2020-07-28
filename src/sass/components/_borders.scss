@@ -1,0 +1,40 @@
+.border {
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 100%;
+   min-height: 100vh;
+   z-index: 5;
+   &-top {
+      position: absolute;
+      width: inherit;
+      height: $border-width;
+      top: 0;
+      left: 0;
+      background: #fff;
+   }
+   &-right {
+      position: absolute;
+      width: $border-width;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      background: #fff;
+   }
+   &-bottom {
+      position: absolute;
+      width: inherit;
+      height: $border-width;
+      bottom: 0;
+      left: 0;
+      background: #fff;
+   }
+   &-left {
+      position: absolute;
+      width: $border-width;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background: #fff;
+   }
+}

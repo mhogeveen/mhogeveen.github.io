@@ -10,19 +10,17 @@ const Navbar = () => {
    }
 
    return (
-      <>
-         <nav className='navbar'>
-            <div
-               className={navOut ? 'navbar-menu-button active' : 'navbar-menu-button'}
-               onClick={handleNav}
-            >
-               <div className='menu-button-bar'></div>
-               <div className='menu-button-bar'></div>
-               <div className='menu-button-bar'></div>
-            </div>
-         </nav>
+      <header>
+         <div
+            className={navOut ? 'navbar-menu-button active' : 'navbar-menu-button'}
+            onClick={handleNav}
+         >
+            <div className='menu-button-bar'></div>
+            <div className='menu-button-bar'></div>
+            <div className='menu-button-bar'></div>
+         </div>
          <Drawer navOut={navOut} />
-      </>
+      </header>
    )
 }
 
