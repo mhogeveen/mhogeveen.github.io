@@ -14,8 +14,7 @@
       @include staggered-transition;
 
       &_title {
-         font-family: 'Montserrat', sans-serif;
-         color: lighten($black, 25%);
+         color: $black;
          font-size: 50px;
          font-weight: 300;
          text-transform: uppercase;

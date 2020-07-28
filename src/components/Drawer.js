@@ -21,13 +21,13 @@ const sections = [
 
 const Drawer = ({ navOut }) => {
    return (
-      <div className={navOut ? 'drawer active' : 'drawer'}>
+      <nav className={navOut ? 'drawer active' : 'drawer'}>
          {sections.map((section) => (
             <a key={section.id} className='drawer-item' href={`#${section.id}`}>
                <span className='drawer-item_title'>{section.name}</span>
             </a>
          ))}
-      </div>
+      </nav>
    )
 }
 

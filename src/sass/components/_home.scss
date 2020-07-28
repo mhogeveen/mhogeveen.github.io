@@ -1,0 +1,22 @@
+#home {
+   height: 100vh;
+}
+
+.home {
+   &-tekst {
+      grid-column: 3 / 6;
+      font-size: 35px;
+      font-weight: 300;
+      height: max-content;
+      margin-top: 30vh;
+
+      & p {
+         width: 100%;
+      }
+
+      &-name {
+         font-weight: 500;
+         color: #f54641;
+      }
+   }
+}

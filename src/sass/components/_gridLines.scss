@@ -1,9 +1,14 @@
 .grid {
    display: grid;
    grid-template-columns: 50px repeat(5, 1fr) 50px;
-   min-height: 100vh;
-   width: 100%;
-   position: fixed;
+
+   &-background {
+      min-height: 100vh;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+   }
 
    &-line {
       border-right: 1px solid rgba(0, 0, 0, 0.05);
