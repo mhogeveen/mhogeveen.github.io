@@ -1,18 +1,20 @@
 #home {
    height: 100vh;
+   grid-template-rows: repeat(3, 1fr);
 }
 
 .home {
    &-tekst {
-      grid-column: 3 / 6;
+      grid-column: 3 / 5;
       grid-row: 1;
       font-size: 35px;
       font-weight: 300;
-      height: max-content;
-      margin-top: 30vh;
+      align-self: end;
+      padding-bottom: 2rem;
 
       & p {
          width: 100%;
+         margin: 0;
       }
 
       &-name {
@@ -22,11 +24,11 @@
    }
 
    &-button {
-      grid-column: 5 / 6;
-      grid-row: 1;
-      margin-top: 50vh;
+      grid-column: 4;
+      grid-row: 2;
       height: 40px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
+      padding-top: 2rem;
    }
 }
