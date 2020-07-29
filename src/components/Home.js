@@ -3,11 +3,11 @@ import React from 'react'
 const Home = () => {
    return (
       <section id='home' className='grid'>
-         <div className='home-tekst'>
+         <div className='home-intro'>
             <p>
-               Hoi, mijn naam is <span className='home-tekst-name'>Maarten Hogeveen</span>.
+               Hoi, mijn naam is <span className='home-intro-name'>Maarten Hogeveen</span>.
                <br />
-               Ik ben een front-end web-developer.
+               Front-end web developer / designer
             </p>
          </div>
          <div className='home-button'>

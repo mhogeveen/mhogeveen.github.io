@@ -1,6 +1,26 @@
 import React, { useState } from 'react'
 
 import Drawer from './Drawer'
+import ScrollIndicator from './ScrollIndicator'
+
+const sections = [
+   {
+      name: 'Home',
+      id: 'home',
+   },
+   {
+      name: 'Over mij',
+      id: 'over',
+   },
+   {
+      name: 'Portfolio',
+      id: 'portfolio',
+   },
+   {
+      name: 'Contact',
+      id: 'contact',
+   },
+]
 
 const Navbar = () => {
    const [navOut, setNavOut] = useState(false)
@@ -12,7 +32,7 @@ const Navbar = () => {
    return (
       <header>
          <div
-            className={navOut ? 'navbar-menu-button active' : 'navbar-menu-button'}
+            className={navOut ? 'navbar-menu-button active-menu' : 'navbar-menu-button'}
             onClick={handleNav}
             role='button'
          >
@@ -20,7 +40,8 @@ const Navbar = () => {
             <div className='menu-button-bar'></div>
             <div className='menu-button-bar'></div>
          </div>
-         <Drawer navOut={navOut} handleNav={handleNav} />
+         <ScrollIndicator sections={sections} />
+         <Drawer navOut={navOut} handleNav={handleNav} sections={sections} />
       </header>
    )
 }

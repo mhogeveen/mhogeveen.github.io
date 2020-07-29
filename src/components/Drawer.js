@@ -1,25 +1,6 @@
 import React from 'react'
 
-const sections = [
-   {
-      name: 'Home',
-      id: 'home',
-   },
-   {
-      name: 'Over mij',
-      id: 'over-mij',
-   },
-   {
-      name: 'Portfolio',
-      id: 'portfolio',
-   },
-   {
-      name: 'Contact',
-      id: 'contact',
-   },
-]
-
-const Drawer = ({ navOut, handleNav }) => {
+const Drawer = ({ navOut, handleNav, sections }) => {
    return (
       <nav className={navOut ? 'drawer active' : 'drawer'}>
          <div className='drawer-background'></div>

@@ -3,6 +3,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import GridLines from './GridLines'
 import Home from './Home'
+import Over from './Over'
 
 const App = () => {
    return (
@@ -10,6 +11,7 @@ const App = () => {
          <Navbar />
          <main>
             <Home />
+            <Over />
          </main>
          <GridLines />
       </>

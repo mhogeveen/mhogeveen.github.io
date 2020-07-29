@@ -9,9 +9,11 @@
 @import './sass/components/drawer';
 @import './sass/components/gridLines';
 @import './sass/components/home';
+@import './sass/components/over';
+@import './sass/components/scrollIndicator';
 
 :root {
-   font-size: 15px;
+   font-size: 16px;
    scroll-behavior: smooth;
 }
 
@@ -28,7 +30,6 @@
 }
 
 body {
-   height: 200vh;
    padding: 0;
    margin: 0;
    box-sizing: border-box;
