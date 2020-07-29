@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import profile from '../assets/profile.jpg'
 
-const Over = () => {
+const Over = ({ handleSetPos }) => {
+   useEffect(() => {
+      const over = document.querySelector('#over')
+      const pos = over.getBoundingClientRect()
+      handleSetPos('over', pos.top)
+   }, [])
+
    return (
       <section id='over' className='grid'>
          <div className='over-image'>
