@@ -22,7 +22,7 @@ const sections = [
    },
 ]
 
-const Navbar = ({ sectionPos }) => {
+const Navbar = ({ positions }) => {
    const [navOut, setNavOut] = useState(false)
 
    const handleNav = () => {
@@ -40,7 +40,7 @@ const Navbar = ({ sectionPos }) => {
             <div className='menu-button-bar'></div>
             <div className='menu-button-bar'></div>
          </div>
-         <ScrollIndicator sections={sections} sectionPos={sectionPos} />
+         <ScrollIndicator sections={sections} positions={positions} />
          <Drawer navOut={navOut} handleNav={handleNav} sections={sections} />
       </header>
    )
