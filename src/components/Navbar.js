@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { connect } from 'react-redux'
+import { toggleMenu } from '../actions'
 
 import Drawer from './Drawer'
 import ScrollIndicator from './ScrollIndicator'
@@ -22,28 +24,30 @@ const sections = [
    },
 ]
 
-const Navbar = ({ positions }) => {
-   const [navOut, setNavOut] = useState(false)
-
-   const handleNav = () => {
-      setNavOut(!navOut)
+const Navbar = ({ menu, toggleMenu }) => {
+   const handleToggleMenu = () => {
+      toggleMenu()
    }
 
    return (
       <header>
          <div
-            className={navOut ? 'navbar-menu-button active-menu' : 'navbar-menu-button'}
-            onClick={handleNav}
+            className={menu ? 'navbar-menu-button active-menu' : 'navbar-menu-button'}
+            onClick={handleToggleMenu}
             role='button'
          >
             <div className='menu-button-bar'></div>
             <div className='menu-button-bar'></div>
             <div className='menu-button-bar'></div>
          </div>
-         <ScrollIndicator sections={sections} positions={positions} />
-         <Drawer navOut={navOut} handleNav={handleNav} sections={sections} />
+         <ScrollIndicator sections={sections} />
+         <Drawer sections={sections} menu={menu} handleToggleMenu={handleToggleMenu} />
       </header>
    )
 }
 
-export default Navbar
+const mapStateToProps = (state) => ({
+   menu: state.menu,
+})
+
+export default connect(mapStateToProps, { toggleMenu })(Navbar)

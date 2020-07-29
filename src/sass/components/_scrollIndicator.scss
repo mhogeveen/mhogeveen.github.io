@@ -5,6 +5,7 @@ $marginSides: (50px - $dotSize) / 2;
    top: 50%;
    left: $marginSides;
    transform: translateY(-50%);
+   transition: top 400ms ease-out;
 
    &-dot:hover .dot-active {
       transform: scale(0.3);

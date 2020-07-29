@@ -1,11 +1,16 @@
 import React from 'react'
 
-const Drawer = ({ navOut, handleNav, sections }) => {
+const Drawer = ({ menu, handleToggleMenu, sections }) => {
    return (
-      <nav className={navOut ? 'drawer active' : 'drawer'}>
+      <nav className={menu ? 'drawer active' : 'drawer'}>
          <div className='drawer-background'></div>
          {sections.map((section) => (
-            <a key={section.id} className='drawer-item' href={`#${section.id}`} onClick={handleNav}>
+            <a
+               key={section.id}
+               className='drawer-item'
+               href={`#${section.id}`}
+               onClick={handleToggleMenu}
+            >
                <span className='drawer-item-title'>{section.name}</span>
                <div className='drawer-item-dot'></div>
             </a>
