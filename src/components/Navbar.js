@@ -4,6 +4,7 @@ import { toggleMenu } from '../actions'
 
 import Drawer from './Drawer'
 import ScrollIndicator from './ScrollIndicator'
+import SocialIcons from './SocialIcons'
 
 const sections = [
    {
@@ -41,6 +42,7 @@ const Navbar = ({ menu, toggleMenu }) => {
             <div className='menu-button-bar'></div>
          </div>
          <ScrollIndicator sections={sections} />
+         <SocialIcons />
          <Drawer sections={sections} menu={menu} handleToggleMenu={handleToggleMenu} />
       </header>
    )
