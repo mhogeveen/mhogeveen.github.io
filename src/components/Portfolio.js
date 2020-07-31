@@ -1,7 +1,9 @@
 import React from 'react'
 
-import ExternalLink from './icons/ExternalLink'
-import Code from './icons/Code'
+import ExternalLinkIcon from './icons/ExternalLinkIcon'
+import CodeIcon from './icons/CodeIcon'
+import ReduxIcon from './icons/ReduxIcon'
+import ReactIcon from './icons/ReactIcon'
 
 import dnd_dice_roller from '../assets/dnd_dice_roller.png'
 
@@ -23,7 +25,7 @@ const Portfolio = () => {
                   className='button-website'
                   role='button'
                >
-                  <ExternalLink />
+                  <ExternalLinkIcon />
                </a>
                <a
                   href='https://github.com/mhogeveen/dnd_dice_roller'
@@ -32,14 +34,22 @@ const Portfolio = () => {
                   className='button-code'
                   role='button'
                >
-                  <Code />
+                  <CodeIcon />
                </a>
             </div>
             <div className='project-image'>
                <img src={dnd_dice_roller} alt='DnD Dice Roller' />
             </div>
             <div className='project-technologies'>
-               <div></div>
+               <div className='tech-icon'>
+                  <ReactIcon />
+               </div>
+               <div className='tech-icon'>
+                  <ReduxIcon />
+               </div>
+               <div className='tech-icon'>
+                  <ReduxIcon />
+               </div>
             </div>
          </div>
       </section>

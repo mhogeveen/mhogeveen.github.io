@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ExternalLink = () => {
+const ExternalLinkIcon = () => {
    return (
       <svg
          aria-hidden='true'
@@ -17,4 +17,4 @@ const ExternalLink = () => {
    )
 }
 
-export default ExternalLink
+export default ExternalLinkIcon

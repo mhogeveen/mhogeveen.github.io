@@ -35,7 +35,9 @@
 
    &-buttons {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
+      width: 100%;
+      padding: 10px 0;
    }
 
    &-image {
@@ -43,9 +45,9 @@
          object-fit: cover;
          width: calc(100% - 1px);
          max-height: 100%;
-         border-left: 10px solid transparent;
-         border-right: 10px solid transparent;
          box-sizing: border-box;
+         border-top: 1px solid $highlight;
+         border-bottom: 1px solid $highlight;
       }
    }
 
@@ -58,7 +60,26 @@
    }
 
    &-technologies {
-      padding: 20px 0 0 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+   }
+}
+
+.tech-icon {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+
+   & svg {
+      height: 40px;
+      width: 40px;
+      padding: 20px 0;
+   }
+
+   & svg path {
+      fill: lighten($black, 70%);
    }
 }
 
@@ -67,14 +88,12 @@
       height: 18px;
       width: 18px;
       padding: 11px;
-      margin: 10px 30px;
    }
 
    &-code {
       height: 20px;
       width: 20px;
       padding: 12px 10px 8px 10px;
-      margin: 10px 30px;
    }
 
    &-website path,

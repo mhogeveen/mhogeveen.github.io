@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Code = () => {
+const CodeIcon = () => {
    return (
       <svg
          aria-hidden='true'
@@ -17,4 +17,4 @@ const Code = () => {
    )
 }
 
-export default Code
+export default CodeIcon
