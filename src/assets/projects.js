@@ -14,6 +14,6 @@ export const projectsArray = [
       website: 'https://mhogeveen.github.io/JavaScript_ToDoList/',
       code: 'https://github.com/mhogeveen/JavaScript_ToDoList',
       image: checklist,
-      icons: ['javascript', 'sass'],
+      icons: ['javascript', 'sass', 'html'],
    },
 ]
