@@ -1,3 +1,90 @@
 #portfolio {
-   height: 100vh;
+   min-height: 100vh;
+   grid-template-rows: 50px 100px auto 50px;
+}
+
+.portfolio-title {
+   grid-column: 3 / 6;
+   grid-row: 2;
+   justify-self: center;
+
+   & h2 {
+      font-size: 40px;
+      font-weight: 300;
+      margin: 0;
+   }
+}
+
+.project {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   &:nth-child(2) {
+      grid-column: 2;
+      grid-row: 3;
+   }
+
+   &-title {
+      & h3 {
+         margin: 0;
+         font-size: 30px;
+         font-weight: 300;
+      }
+   }
+
+   &-buttons {
+      display: flex;
+      justify-content: center;
+   }
+
+   &-image {
+      & img {
+         object-fit: cover;
+         width: calc(100% - 1px);
+         max-height: 100%;
+         border-left: 10px solid transparent;
+         border-right: 10px solid transparent;
+         box-sizing: border-box;
+      }
+   }
+
+   &-text {
+      align-self: center;
+
+      & p {
+         margin: 0;
+      }
+   }
+
+   &-technologies {
+      padding: 20px 0 0 0;
+   }
+}
+
+.button {
+   &-website {
+      height: 18px;
+      width: 18px;
+      padding: 11px;
+      margin: 10px 30px;
+   }
+
+   &-code {
+      height: 20px;
+      width: 20px;
+      padding: 12px 10px 8px 10px;
+      margin: 10px 30px;
+   }
+
+   &-website path,
+   &-code path {
+      fill: lighten($black, 70%);
+      transition: fill 300ms ease;
+   }
+
+   &-website:hover path,
+   &-code:hover path {
+      fill: $accent;
+   }
 }

@@ -4,19 +4,19 @@ import { updatePos } from '../actions'
 
 const ScrollIndicator = ({ sections, positions, updatePos }) => {
    useEffect(() => {
+      const observer = new IntersectionObserver(
+         function (entries) {
+            if (entries[0].isIntersecting === true) {
+               updatePos(entries[0].target.id)
+            }
+         },
+         { threshold: [0.6] }
+      )
+
       observer.observe(document.querySelector('#home'))
       observer.observe(document.querySelector('#over'))
       observer.observe(document.querySelector('#portfolio'))
-   }, [])
-
-   var observer = new IntersectionObserver(
-      function (entries) {
-         if (entries[0].isIntersecting === true) {
-            updatePos(entries[0].target.id)
-         }
-      },
-      { threshold: [0.6] }
-   )
+   }, [updatePos])
 
    const renderIndicator = (arr) => {
       return arr.map((item) => (
