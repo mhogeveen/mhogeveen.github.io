@@ -3,6 +3,7 @@ import React from 'react'
 import ReduxIcon from './ReduxIcon'
 import ReactIcon from './ReactIcon'
 import JavaScriptIcon from './JavaScriptIcon'
+import JQueryIcon from './JQueryIcon'
 import SassIcon from './SassIcon'
 import HTMLIcon from './HTMLIcon'
 import CSSIcon from './CSSIcon'
@@ -11,6 +12,7 @@ const components = {
    redux: <ReduxIcon />,
    react: <ReactIcon />,
    javascript: <JavaScriptIcon />,
+   jquery: <JQueryIcon />,
    sass: <SassIcon />,
    html: <HTMLIcon />,
    css: <CSSIcon />,

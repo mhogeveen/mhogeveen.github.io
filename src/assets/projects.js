@@ -1,5 +1,6 @@
 import dnd_dice_roller from './dnd_dice_roller.png'
 import checklist from './checklist.png'
+import pure from './pure.png'
 
 export const projectsArray = [
    {
@@ -15,5 +16,12 @@ export const projectsArray = [
       code: 'https://github.com/mhogeveen/JavaScript_ToDoList',
       image: checklist,
       icons: ['javascript', 'sass', 'html'],
+   },
+   {
+      name: 'Pure',
+      website: 'https://foundryremake.firebaseapp.com/',
+      code: 'https://github.com/mhogeveen/FoundryRemake',
+      image: pure,
+      icons: ['jquery', 'sass', 'html'],
    },
 ]

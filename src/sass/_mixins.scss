@@ -10,7 +10,7 @@
 @mixin project-columns {
    @for $i from 2 through 6 {
       &:nth-child(#{$i}) {
-         grid-column: #{$i};
+         grid-column: #{$i + 1};
          grid-row: 3;
       }
    }
