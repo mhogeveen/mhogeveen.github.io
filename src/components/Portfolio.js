@@ -7,9 +7,9 @@ import { projectsArray } from '../assets/projects'
 const Portfolio = () => {
    return (
       <section id='portfolio' className='grid'>
-         <div className='portfolio-title'>
+         {/* <div className='portfolio-title'>
             <h2>Portfolio</h2>
-         </div>
+         </div> */}
          {projectsArray.map((projectItem) => (
             <Project project={projectItem} key={projectItem.name} />
          ))}

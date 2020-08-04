@@ -9,6 +9,37 @@
 
 .grid-line {
    border-right: 1px solid $highlight;
+
+   @media screen and (max-width: $l) {
+      &:last-child {
+         display: none;
+      }
+
+      &:nth-child(5) {
+         border: none;
+      }
+   }
+
+   @media screen and (max-width: $m) {
+      &:last-child,
+      &:nth-child(5) {
+         display: none;
+      }
+
+      &:nth-child(4) {
+         border: none;
+      }
+   }
+
+   @media screen and (max-width: $s) {
+      &:nth-child(4) {
+         display: none;
+      }
+
+      &:nth-child(3) {
+         border: none;
+      }
+   }
 }
 
 .corner {

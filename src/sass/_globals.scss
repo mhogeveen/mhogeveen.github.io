@@ -1,6 +1,22 @@
 .grid {
    display: grid;
    grid-template-columns: 50px repeat(5, 1fr) 50px;
+
+   @media screen and (max-width: $xl) {
+      grid-template-columns: repeat(2, 50px) repeat(3, 1fr) repeat(2, 50px);
+   }
+
+   @media screen and (max-width: $l) {
+      grid-template-columns: 50px repeat(3, 1fr) 50px;
+   }
+
+   @media screen and (max-width: $m) {
+      grid-template-columns: 50px repeat(2, 1fr) 50px;
+   }
+
+   @media screen and (max-width: $s) {
+      grid-template-columns: 50px auto 50px;
+   }
 }
 
 .button {
