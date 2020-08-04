@@ -4,14 +4,19 @@ import { updatePos } from '../actions'
 
 const ScrollIndicator = ({ sections, positions, updatePos }) => {
    useEffect(() => {
-      const observer = new IntersectionObserver(
-         function (entries) {
-            if (entries[0].isIntersecting === true) {
-               updatePos(entries[0].target.id)
+      const config = {
+         root: null,
+         rootMargin: '-30% 0px -30% 0px',
+         threshold: 0.1,
+      }
+
+      const observer = new IntersectionObserver(function (entries) {
+         entries.forEach((entry) => {
+            if (entry.isIntersecting === true) {
+               updatePos(entry.target.id)
             }
-         },
-         { threshold: [0.6] }
-      )
+         })
+      }, config)
 
       observer.observe(document.querySelector('#home'))
       observer.observe(document.querySelector('#over'))
