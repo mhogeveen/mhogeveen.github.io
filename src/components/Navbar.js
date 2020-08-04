@@ -19,10 +19,6 @@ const sections = [
       name: 'Portfolio',
       id: 'portfolio',
    },
-   {
-      name: 'Contact',
-      id: 'contact',
-   },
 ]
 
 const Navbar = ({ menu, toggleMenu }) => {
