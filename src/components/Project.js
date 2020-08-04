@@ -2,7 +2,23 @@ import React from 'react'
 
 import ExternalLinkIcon from './icons/ExternalLinkIcon'
 import CodeIcon from './icons/CodeIcon'
-import TechIcon from './icons/TechIcon'
+import ReduxIcon from './icons/ReduxIcon'
+import ReactIcon from './icons/ReactIcon'
+import JavaScriptIcon from './icons/JavaScriptIcon'
+import JQueryIcon from './icons/JQueryIcon'
+import SassIcon from './icons/SassIcon'
+import HTMLIcon from './icons/HTMLIcon'
+import CSSIcon from './icons/CSSIcon'
+
+const components = {
+   redux: <ReduxIcon />,
+   react: <ReactIcon />,
+   javascript: <JavaScriptIcon />,
+   jquery: <JQueryIcon />,
+   sass: <SassIcon />,
+   html: <HTMLIcon />,
+   css: <CSSIcon />,
+}
 
 const Project = ({ project }) => {
    return (
@@ -34,7 +50,11 @@ const Project = ({ project }) => {
             <img src={project.image} alt='DnD Dice Roller' />
          </div>
          <div className='project-technologies'>
-            <TechIcon icons={project.icons} />
+            {project.icons.map((icon) => (
+               <div className='tech-icon' key={icon}>
+                  {components[icon]}
+               </div>
+            ))}
          </div>
       </div>
    )

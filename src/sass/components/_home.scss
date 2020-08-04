@@ -40,6 +40,11 @@
          font-weight: 500;
          color: $accent;
       }
+
+      @media screen and (max-width: $s) {
+         padding: 0 10px;
+         font-size: 30px;
+      }
    }
 
    &-button {
