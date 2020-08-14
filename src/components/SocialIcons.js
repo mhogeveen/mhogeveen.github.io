@@ -8,6 +8,7 @@ const SocialIcons = () => {
             target='_blank'
             rel='noopener noreferrer'
             className='icon'
+            role='button'
          >
             <svg
                aria-hidden='true'
@@ -27,6 +28,7 @@ const SocialIcons = () => {
             target='_blank'
             rel='noopener noreferrer'
             className='icon'
+            role='button'
          >
             <svg
                aria-hidden='true'
@@ -46,6 +48,7 @@ const SocialIcons = () => {
             target='_blank'
             rel='noopener noreferrer'
             className='icon'
+            role='button'
          >
             <svg
                aria-hidden='true'

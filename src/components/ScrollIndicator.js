@@ -25,7 +25,7 @@ const ScrollIndicator = ({ sections, positions, updatePos }) => {
 
    const renderIndicator = (arr) => {
       return arr.map((item) => (
-         <a href={`#${item.id}`} className='indicator-dot' key={item.id}>
+         <a href={`#${item.id}`} className='indicator-dot' key={item.id} role='button'>
             <div className='dot-inactive'></div>
             <div className={positions[item.id] ? 'dot-active dot-full' : 'dot-active'}></div>
          </a>
