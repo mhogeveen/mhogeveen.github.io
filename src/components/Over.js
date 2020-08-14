@@ -1,12 +1,12 @@
 import React from 'react'
 
-import profile from '../assets/profile.jpg'
+import profile from '../assets/profile.webp'
 
 const Over = () => {
    return (
       <section id='over' className='grid'>
          <div className='over-image'>
-            <img src={profile} alt='Profile' />
+            <img src={profile} alt='Profile' loading='lazy' />
          </div>
          <div className='over-tekst'>
             Sinds mijn jeugd heb ik al een affiniteit gehad met <strong>technologie</strong>. Mijn

@@ -47,7 +47,7 @@ const Project = ({ project }) => {
             </a>
          </div>
          <div className='project-image'>
-            <img src={project.image} alt='DnD Dice Roller' />
+            <img src={project.image} alt={project.name} loading='lazy' />
          </div>
          <div className='project-technologies'>
             {project.icons.map((icon) => (

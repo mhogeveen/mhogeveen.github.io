@@ -1,6 +1,6 @@
-import dnd_dice_roller from './dnd_dice_roller.png'
-import checklist from './checklist.png'
-import pure from './pure.png'
+import dnd_dice_roller from './dnd_dice_roller.webp'
+import checklist from './checklist.webp'
+import pure from './pure.webp'
 
 export const projectsArray = [
    {
