@@ -9,11 +9,13 @@ import JQueryIcon from './icons/JQueryIcon'
 import SassIcon from './icons/SassIcon'
 import HTMLIcon from './icons/HTMLIcon'
 import CSSIcon from './icons/CSSIcon'
+import TypeScriptIcon from './icons/TypeScriptIcon'
 
 const components = {
    redux: <ReduxIcon />,
    react: <ReactIcon />,
    javascript: <JavaScriptIcon />,
+   typescript: <TypeScriptIcon />,
    jquery: <JQueryIcon />,
    sass: <SassIcon />,
    html: <HTMLIcon />,
