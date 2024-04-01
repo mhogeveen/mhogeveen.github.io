@@ -1,0 +1,47 @@
+#over {
+   min-height: 100vh;
+   grid-template-rows: 50px repeat(2, auto) 50px;
+}
+
+.over {
+   &-image {
+      grid-column: 3;
+      grid-row: 2;
+      align-self: end;
+
+      & img {
+         object-fit: cover;
+         width: 100%;
+         max-height: 100%;
+         filter: grayscale(1);
+      }
+
+      @media screen and (max-width: $l) {
+         grid-column: 2;
+      }
+
+      @media screen and (max-width: $s) {
+         grid-column: 2;
+         width: 70%;
+      }
+   }
+
+   &-tekst {
+      grid-column: 3 / 6;
+      grid-row: 3;
+      padding-top: 2rem;
+
+      @media screen and (max-width: $l) {
+         grid-column: 2 / 5;
+      }
+
+      @media screen and (max-width: $m) {
+         grid-column: 2 / 4;
+      }
+
+      @media screen and (max-width: $s) {
+         grid-column: 2;
+         font-size: 14px;
+      }
+   }
+}
